@@ -30,14 +30,8 @@ Join the [Discord](https://discord.gg/5dR3ca38tB) and give us ideas :)
  * [Blacket Emojis](chat-trade/blacketEmojis.js) | Turn your messages into Blacket emojis.
  * [Show Chat Rewards](chat-trade/showChatRewards.js) | Show the rewards you get from chatting.<br>
     * These rewards __do__ still occur, yet you don't know it. This changes that.
- * [Trade Whitelist](chat-trade/tradeWhitelist.js) | Only allow specific users to trade you.<br>
-    * Click the Escape (esc) key to trigger the menu.
-    * Cannot be used with Block Player.
 
 ### [Global](global/)
- * [Block Player](chat-trade/blockPlayer.js) | Block players!
-    * Use CTRL + B to trigger the menu.
-    * Cannot be used with Trade Whitelist.
  * [Spoof Admin](global/spoofAdmin.js) | Make it appear as if you have admin permissions.<br>
 
 ### [Inventory](inventory/)
@@ -48,11 +42,21 @@ Join the [Discord](https://discord.gg/5dR3ca38tB) and give us ideas :)
  * [Simulate Unlock](market/simulateUnlock.js) | Make it appear as if you are unlocking a Blook.<br>
  * [Spam Open Packs](market/spamOpenPacks.js) | Quickly open packs.<br>
 
+### [Stats](stats/)
+ * [Spoof Banner](stats/spoofBanner.js) | Pretend to have a banner.<br>
+ * [Spoof Blook Count](stats/spoofBlookCount.js) | Pretend to have a blook count.<br>
+ * [Spoof Blook Profile](stats/spoofBlookProfile.js) | Pretend to have a blook profile.<br>
+ * [Spoof Tokens](stats/spoofTokens.js) | Pretend to have a token count.<br>
+ * [Spoof User](stats/spoofUser.js) | Pretend to haveuuser information.<br>
+ 
 ### [Themes](themes/)
  * [Lightmode](themes/lightTheme.js) | Ruin your eyes with a light theme.<br>
    * [Tampermonkey](themes/tampermonkey/lightTheme.js)<br>
    
-   
+### [Misc](misc/)
+ * [Add Fake News](stats/addFakeNews.js) | Add fox, oops, fake news.<br>
+ * [Add to Credits](stats/addToCredits.js) | Add yourself to the credits.<br>
+ 
 </details>
 
 <details>
