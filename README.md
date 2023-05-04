@@ -28,6 +28,7 @@ Join the [Discord](https://discord.gg/5dR3ca38tB) and give us ideas :)
 
 ### [Chat/Trade](chat-trade/)
  * [Blacket Emojis](chat-trade/blacketEmojis.js) | Turn your messages into Blacket emojis.
+ * [Log Trade](chat-trade/logTrade.js) | Get a downloadable log of the trade when complete.
  * [Show Chat Rewards](chat-trade/showChatRewards.js) | Show the rewards you get from chatting.<br>
     * These rewards __do__ still occur, yet you don't know it. This changes that.
 
