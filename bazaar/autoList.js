@@ -1,0 +1,27 @@
+/* currently banned from blacket, cannot test, probably works. open issue if doesnt. */
+(async () => {
+  if (!blacket.blooks) return alert('Please visit the Blooks page to run this.');
+  
+  let blook = prompt('What Blook?');
+  if (!blacket.blooks[blook]) return alert('Enter a valid Blook name. Case matters.');
+  
+  let amt = Number(prompt('What amount?'));
+  if (isNaN(amt) || amt < 1 || (Math.floor(amt) !== amt) || amt > blacket.user.blooks[blook]) return alert('Invalid amount. You may also not have that many of the Blook.');
+  
+  let speed = Number(prompt('What speed?'));
+  if (isNaN(speed) || speed < 150 || (Math.floor(speed) !== speed)) return alert('Invalid speed. Speed should be above or at 150.');
+  
+  let count = 0;
+  
+  let interval = setInterval(() => {
+    if (count >= amt) return clearInterval(interval);
+    
+    blacket.requests.post(`/worker/bazaar/list`, {
+      blook
+    }, (t) => {
+      if (t.error) return console.log(`Error listing: ${t.reason}`);
+      count++;
+      console.log(`Listed 1x ${blook}!`);
+    });
+  }, speed);
+})();
