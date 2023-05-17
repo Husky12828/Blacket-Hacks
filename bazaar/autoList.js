@@ -5,10 +5,10 @@
   if (!blacket.blooks[item]) return alert('Enter a valid Blook name. Case matters.');
   
   let amt = Number(prompt('What amount?'));
-  if (isNaN(amt) || amt < 1 || (Math.floor(amt) !== amt) || amt > blacket.user.blooks[blook]) return alert('Invalid amount. You may also not have that many of the Blook.');
+  if (isNaN(amt) || amt < 1 || (Math.floor(amt) !== amt) || amt > blacket.user.blooks[item]) return alert('Invalid amount. You may also not have that many of the Blook.');
   
   let price = Number(prompt('What price?'));
-  if (isNaN(price) || price < 1 || (Math.floor(price) !== amt)) return alert('Invalid price.');
+  if (isNaN(price) || price < 1 || (Math.floor(price) !== price)) return alert('Invalid price.');
   
   let speed = Number(prompt('What speed?'));
   if (isNaN(speed) || speed < 150 || (Math.floor(speed) !== speed)) return alert('Invalid speed. Speed should be above or at 150.');
