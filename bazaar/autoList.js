@@ -1,4 +1,3 @@
-/* currently banned from blacket, cannot test, probably works. open issue if doesnt. */
 (async () => {
   if (!blacket.blooks) return alert('Please visit the Blooks page to run this.');
   
@@ -25,7 +24,7 @@
     }, (t) => {
       if (t.error) return console.log(`Error listing: ${t.reason}`);
       count++;
-      console.log(`Listed 1x ${blook}!`);
+      console.log(`Listed 1x ${item}!`);
     });
   }, speed);
 })();
