@@ -1,15 +1,4 @@
 <div align="center">
-  <h1> blacketware is likely permanently archived. </h1>
-  <h3> instead, check out these people! </h3>
-  <p><b>tremblero</b> - https://github.com/tremblero</p>
-  <br>
-  <p><b>we do not strictly verify the reliability of any above users.</b></p>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   <img src="https://user-images.githubusercontent.com/101288516/217323368-c526a242-fab7-48c7-84f3-64a316f915b8.png">
   <h1>BlacketWare</h1>
   <h3>The Blacket Hack.</h3>
@@ -67,7 +56,6 @@ Join the [Discord](https://discord.gg/5dR3ca38tB) and give us ideas :)
    
 ### [Misc](misc/)
  * [Add Fake News](stats/addFakeNews.js) | Add fox, oops, fake news.<br>
- * [Add to Credits](stats/addToCredits.js) | Add yourself to the credits.<br>
  
 </details>
 
@@ -82,7 +70,7 @@ I would generally recommend a computer. You can probably use mobile devices (goo
 You can be banned by exceeding the ratelimit. All of our scripts are specially tailored to PREVENT this from happening.<br>
 
 ### Will these be taken down?
-Unless I am asked by Xotic, these will stay on Github and be regularly maintained.<br>
+Unless we are asked by Xotic, these will stay on Github and be regularly maintained.<br>
 
 ### Why are these obfuscated?
 Skids are rather annoying. Deobfuscators are also annoying.<br>
