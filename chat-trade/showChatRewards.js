@@ -7,15 +7,15 @@ let getRewards = async () => {
 };
 
 let showModal = (content, doAudio) => {
-    $(".toastMessage").remove();
+    $('.toastMessage').remove();
 
     let id = Math.random().toString(36).substring(2, 15);
-    $("#app").append(`<div id="${id}" class="toastMessage" style="animation: styles__oldGrowIn___3FTko-camelCase 0.5s linear forwards; background-color: #1f1f1f;border-radius: 7px;left: 0; right: 0; margin: auto;text-align: center;height: fit-content;top: -90%;"><text style="color: white; font-size:20px;">${content}</text></div>`);
+    $('#app').append(`<div id='${id}' class='toastMessage' style='animation: styles__oldGrowIn___3FTko-camelCase 0.5s linear forwards; background-color: #1f1f1f;border-radius: 7px;left: 0; right: 0; margin: auto;text-align: center;height: fit-content;top: -90%;'><text style='color: white; font-size:20px;'>${content}</text></div>`);
 
-    if (doAudio) new Audio("/content/notification.ogg").play();
+    if (doAudio) new Audio('/content/notification.ogg').play();
 
     setTimeout(() => {
-        $(`#${id}`).attr("style", "animation: styles__oldGrowOut___3FTko-camelCase 0.5s linear forwards; background-color: #1f1f1f;border-radius: 7px;left: 0; right: 0; margin: auto;text-align: center;height: fit-content;top: -90%;");
+        $(`#${id}`).attr('style', 'animation: styles__oldGrowOut___3FTko-camelCase 0.5s linear forwards; background-color: #1f1f1f;border-radius: 7px;left: 0; right: 0; margin: auto;text-align: center;height: fit-content;top: -90%;');
         setTimeout(() => $(`#${id}`).remove(), 1500);
     }, 3000);
 };

@@ -2,28 +2,25 @@
     if (!blacket.blooks) return alert(`You must be on the Market or Blooks pages to run this script.`);
     if (!confirm('Do you actually want to sell all of your duplicate blooks?')) return alert(`Cancelled script.`);
 
-    let tosell = {};
+    let pendingSale = {};
 
     Object.keys(blacket.blooks).forEach((blook) => {
         if (Object.keys(blacket.user.blooks).includes(blook)) {
             qnt = blacket.user.blooks[blook] - 1;
             if (qnt == 0) return;
-            tosell[blook] = qnt;
+            pendingSale[blook] = qnt;
         };
     });
 
-    function sell(blook, amount) {
-        blacket.requests.post("/worker/sell", {
-            blook: blook,
-            quantity: amount
+    let sellInterval = setInterval(() => {
+        if (Object.keys(pendingSale).length == 0) return clearInterval(sellInterval);
+        blacket.requests.post('/worker/sell', {
+            blook: Object.keys(pendingSale)[0],
+            quantity: Object.values(pendingSale)[0]
         }, (res) => {
             if (res.error) return;
             console.log(`Sold ${amount}x ${blook}`);
-            delete tosell[blook];
+            delete pendingSale[blook];
         });
-    };
-
-    setInterval(() => {
-        sell(Object.keys(tosell)[0], Object.values(tosell)[0]);
     }, 150);
 })();

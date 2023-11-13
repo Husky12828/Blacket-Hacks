@@ -61,7 +61,7 @@
         };
 
         blacket.selectBlook(blacket.blooks.selected);
-    }, 2000);
+    }, 1500);
 
     blacket.sellBlook = (quantity) => {
         if (quantity == `` || quantity == 0) return;

@@ -1,4 +1,4 @@
-(function() {
+(function () {
     blacket.listItem = (item, itemId, price) => {
         if (price == `` || price == 0) return;
         $(`.arts__modal___VpEAD-camelCase`).remove();
