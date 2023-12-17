@@ -9,9 +9,9 @@
     if (isNaN(amount) || amount < 0) return alert('Invalid amount.');
     if (amount < 1 || amount * blacket.packs[pack].price > blacket.user.tokens) return alert('You do not have enough tokens.');
 
-    let speed = Number.parseInt(prompt('What speed (in ms) would you like this to open at?\nOur current recommendation is around 200.'));
+    let speed = Number.parseInt(prompt('What speed (in ms) would you like this to open at?\nOur current recommendation is around 1000.'));
     if (isNaN(speed)) return alert('Invalid speed.');
-    if (speed < 125) return alert('The script speed should be above 125 to avoid an IP ban.');
+    if (speed < 300) return alert('The script speed should be above 300 to avoid an IP ban.');
 
     window.blooks = [];
     let i = 0;
