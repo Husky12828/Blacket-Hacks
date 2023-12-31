@@ -2,7 +2,7 @@
     let msg = prompt('Enter a message...');
     let name = prompt('Enter a username...');
     
-    blacket.requests.get(`/worker/user/${name}`, (t) => {
+    blacket.requests.get(`/worker2/user/${name}`, (t) => {
         if (t.error) return alert(`That's not a valid user`);
         blacket.appendChat({
             error: false,
