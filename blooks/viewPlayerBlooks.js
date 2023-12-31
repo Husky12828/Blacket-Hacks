@@ -6,7 +6,7 @@ if (blacket.config.path !== 'blooks') {
 $('.styles__blooksHolder___3qZR1-camelCase').children().replaceWith();
 $('.styles__rightButtonRow___3a0GF-camelCase').remove();
 
-blacket.requests.get(`/worker/user/${prompt('Enter username:')}`, (data) => {
+blacket.requests.get(`/worker2/user/${prompt('Enter username:')}`, (data) => {
     blacket.user.blooks = data.user.blooks;
     blacket.packBlooks = [];
     Object.keys(blacket.packs).reverse().forEach((pack) => {
