@@ -16,7 +16,7 @@
 
     let sellInterval = setInterval(() => {
         if (Object.keys(pendingSale).length == 0) return clearInterval(sellInterval);
-        blacket.requests.post('/worker/sell', {
+        blacket.requests.post('/worker2/sell', {
             blook: Object.keys(pendingSale)[0],
             quantity: Object.values(pendingSale)[0]
         }, (res) => {
