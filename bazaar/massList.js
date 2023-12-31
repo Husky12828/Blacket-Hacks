@@ -8,14 +8,14 @@
     let price = Number(prompt('What price?'));
     if (isNaN(price) || price < 1 || (Math.floor(price) !== price)) return alert('Invalid price.');
     let speed = Number(prompt('What speed?'));
-    if (isNaN(speed) || speed < 150 || (Math.floor(speed) !== speed)) return alert('Invalid speed. Speed should be above or at 150.');
+    if (isNaN(speed) || speed < 300 || (Math.floor(speed) !== speed)) return alert('Invalid speed. Speed should be above or at 300 (recommended: 600).');
 
     let count = 0;
 
     let interval = setInterval(() => {
         if (count >= amt) return clearInterval(interval);
 
-        blacket.requests.post(`/worker/bazaar/list`, {
+        blacket.requests.post(`/worker2/bazaar/list`, {
             item,
             price
         }, (t) => {
