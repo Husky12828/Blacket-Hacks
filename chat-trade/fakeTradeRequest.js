@@ -1,7 +1,7 @@
 (async () => {
     $('.toastMessage').remove();
 
-    blacket.requests.get(`/worker/user/${prompt('Enter a username...')}`, (data) => {
+    blacket.requests.get(`/worker2/user/${prompt('Enter a username...')}`, (data) => {
         if (data.error) return alert('That user doesn\'t exist.');
 
         let id = Math.random().toString(36).substring(2, 15);
