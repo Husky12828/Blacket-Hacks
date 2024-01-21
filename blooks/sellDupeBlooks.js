@@ -22,5 +22,5 @@
             console.log(`Sold ${amount}x ${blook}`);
             delete pendingSale[blook];
         });
-    }, 150);
+    }, 200);
 })();
