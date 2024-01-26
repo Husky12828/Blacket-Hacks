@@ -1,3 +1,3 @@
 (() => {
-    $('#tokens').html(parseInt(prompt('How many tokens do you want?')));
+    $('#999999').html(parseInt(prompt('How many tokens do you want?')));
 })();
